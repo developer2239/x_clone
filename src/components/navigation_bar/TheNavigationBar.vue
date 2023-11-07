@@ -16,6 +16,14 @@ import TheNavigation from './TheNavigation.vue';
       <TheNavigation icon="profile">プロフィール</TheNavigation>
       <TheNavigation icon="more">もっと見る</TheNavigation>
       <div class="navi_post">ポストする</div>
+      <div class="account_menu">
+        <img class="account_img" src="../../assets/icons/account_preset.png" />
+        <div class="account_details">
+          <div class="account_name">SampleAccout</div>
+          <div class="account_id">@Sample1234</div>
+        </div>
+        <img class="" src="../../assets/icons/more.svg" />
+      </div>
     </div>
   </div>
 </template>
@@ -39,5 +47,33 @@ import TheNavigation from './TheNavigation.vue';
   .navis {
     display: none;
   }
+}
+.navi_post {
+  cursor: pointer;
+  text-align: center;
+  border-radius: 30px;
+  background-color: rgb(29, 155, 240);
+}
+.account_menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.account_menu:hover {
+  background-color: rgb(40, 40, 40);
+  border-radius: 60px;
+}
+.account_details {
+  margin: 5px 30px 0 10px;
+  font-size: 15px;
+}
+.account_id {
+  color: gray;
+}
+.account_img {
+  width: 40px;
+  height: 40px;
 }
 </style>

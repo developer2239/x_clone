@@ -18,8 +18,16 @@ watchEffect(async () => {
 </template>
 <style scoped>
 .navi {
+  cursor: pointer;
   display: flex;
   flex-direction: row;
+  margin: 5px 5px 5px 5px;
+  border-radius: 30px;
+  text-align: center;
+}
+.navi:hover {
+  background-color: rgb(40, 40, 40);
+  border-radius: 30px;
 }
 .icon {
   width: 30px;
