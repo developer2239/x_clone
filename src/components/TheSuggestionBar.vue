@@ -3,17 +3,19 @@ import { ref } from 'vue';
 </script>
 <template>
   <div class="wrapper">
-    <div class="search">
-      <img class="search_icon" src="../assets/icons/explore.svg" />
-      <form>
-        <input
-          name="search_input"
-          class="search_input"
-          type="text"
-          placeholder="検索"
-        />
-      </form>
-    </div>
+    <span class="search_wrapper">
+      <div class="search">
+        <img class="search_icon" src="../assets/icons/explore.svg" />
+        <form>
+          <input
+            name="search_input"
+            class="search_input"
+            type="text"
+            placeholder="検索"
+          />
+        </form>
+      </div>
+    </span>
     <div class="sugestion_subscribe">
       <div class="sugestion_subscribe_title">プレミアムにサブスクライブ</div>
       <div class="sugestion_subscribe_text">
@@ -107,6 +109,11 @@ import { ref } from 'vue';
   margin-inline: 30px;
   width: 400px;
 }
+.search_wrapper {
+  background-color: black;
+  position: fixed;
+  overflow: auto;
+}
 .search {
   width: 400px;
   height: 50px;
@@ -129,8 +136,8 @@ import { ref } from 'vue';
   background-color: rgb(32, 35, 39);
 }
 .sugestion_subscribe {
+  margin-top: 70px;
   padding: 20px;
-  margin-top: 20px;
   background-color: rgb(32, 35, 39);
   border: 1px solid black;
   border-radius: 15px;
