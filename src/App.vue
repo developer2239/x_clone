@@ -5,19 +5,27 @@ import TheSuggestionBar from './components/TheSuggestionBar.vue';
 </script>
 
 <template>
-  <div class="contents">
-    <i class="bi bi-search"></i>
-    <TheNavigationBar />
-    <TheMain />
-    <TheSuggestionBar />
+  <div class="wrapper">
+    <div class="contents">
+      <TheNavigationBar />
+      <TheMain />
+      <TheSuggestionBar />
+    </div>
   </div>
 </template>
 
 <style scoped>
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* 
+  width: min(100% - 2rem, 640px);
+  margin-inline: auto;
+  */
+}
 .contents {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  gap: 0;
 }
 </style>
