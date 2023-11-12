@@ -28,8 +28,14 @@ import TheNavigation from './TheNavigation.vue';
   </div>
 </template>
 <style scoped>
-.wrapper {
-  flex-grow: 1;
+.navi_wrapper {
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  overflow: auto;
 }
 .x_logo {
   width: 30px;

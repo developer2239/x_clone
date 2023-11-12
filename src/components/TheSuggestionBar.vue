@@ -105,7 +105,6 @@ import { ref } from 'vue';
 <style scoped>
 .wrapper {
   margin-inline: 30px;
-  flex-grow: 1;
   width: 400px;
 }
 .search {
