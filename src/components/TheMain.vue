@@ -8,8 +8,8 @@ import { ref } from 'vue';
 </template>
 <style scoped>
 .wrapper {
-  width: 675px;
-  flex-grow: 1;
+  width: 600px;
+  margin-inline-start: 300px;
   border-left: 1px solid gray;
   border-right: 1px solid gray;
 }

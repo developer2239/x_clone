@@ -34,6 +34,8 @@ watchEffect(async () => {
   height: 30px;
 }
 .navi_label {
-  margin: 0 40px 0 20px;
+  padding-inline-start: 24px;
+  padding-inline-end: auto;
+  display: inline-block;
 }
 </style>
