@@ -158,6 +158,7 @@ import { ref } from 'vue';
   background-color: rgb(29, 155, 240);
 }
 .sugestion_trend {
+  width: 400px;
   padding: 20px;
   margin-top: 20px;
   background-color: rgb(32, 35, 39);
